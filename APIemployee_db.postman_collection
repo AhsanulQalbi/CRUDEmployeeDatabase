@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "d91b8e09-df03-4eef-b4ff-7bf10e659469",
+		"name": "EmployeeDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "postNewEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Lando",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Norris",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Lando4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "lando",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"type": "file",
+							"src": "/C:/Users/Ahsanul Qalbi/Downloads/lando.jpg"
+						},
+						{
+							"key": "street",
+							"value": "Albion Street",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Oxford",
+							"type": "text"
+						},
+						{
+							"key": "province",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "United Kingdom",
+							"type": "text"
+						},
+						{
+							"key": "postal_code",
+							"value": "525252",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "121212120",
+							"type": "text"
+						},
+						{
+							"key": "phone_type",
+							"value": "Mobile Phone",
+							"type": "text"
+						},
+						{
+							"key": "division",
+							"value": "Front-End",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/employee",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "LandoNorriss@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "lando",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"type": "file",
+							"src": "/C:/Users/Ahsanul Qalbi/Downloads/lando.jpg"
+						},
+						{
+							"key": "street",
+							"value": "Albion Street",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Oxford",
+							"type": "text"
+						},
+						{
+							"key": "province",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "United Kingdom",
+							"type": "text"
+						},
+						{
+							"key": "postal_code",
+							"value": "525252",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "121212120",
+							"type": "text"
+						},
+						{
+							"key": "phone_type",
+							"value": "Mobile Phone",
+							"type": "text"
+						},
+						{
+							"key": "division",
+							"value": "Front-End",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/updateEmployee",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"updateEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAnEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/deleteAnEmployee",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteAnEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEmployees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/getAllEmployees",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getAllEmployees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAnEmployee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/getAnEmployee",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getAnEmployee"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

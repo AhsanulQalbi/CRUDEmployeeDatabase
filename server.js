@@ -16,8 +16,8 @@ app.use('/uploads', express.static('uploads'));
 //WEBPAGE
 app.get('/', async function(req, res)
 {
-    const employeedata = await employee.findAndCountAll({});
-    const countEmployee = employeedata.count
+    const employeeData = await employee.findAndCountAll({});
+    const countEmployee = employeeData.count
 
     const countFrontEnd= await employee.count({ where: { division: "Front-End" }});
     const countBackEnd= await employee.count({ where: { division: "Back-End" }});
@@ -100,7 +100,7 @@ app.post('/api/employee',urlencodedParser,async function(req,res) {
 
         const {phone_number, phone_type} = req.body;
         const newPhone = new phone({
-            employee_id , phone_number,phone_type
+            employee_id, phone_number, phone_type
         });
         
         await newPhone.save();
